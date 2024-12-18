@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+    <!-- bootstrap rtl swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
+
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css'>
+
+    <!-- css style -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://unicons.iconscout.com/release/v2.1.9/css/unicons.css'>
+    
+    <link rel="stylesheet" href="./css/styleSearch.css">
+    <link rel="stylesheet" href="./css/chear.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+
+<body>
+
+    <nav class="navbar sticky-top navbar-expand-xl" aria-label="Offcanvas navbar large">
+        <div class="container-fluid">
+            <button class="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+                <i class="bi bi-list-nested"></i>
+            </button>
+            <i class="bi bi-cart4 ms-4 me-3 icon-animate  z-index"></i>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar2"
+                aria-labelledby="offcanvasNavbar2Label">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close ms-auto me-3  z-index" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <i class="bi bi-x"></i>
+                    </button>
+                </div>
+                <div class="bg-overlay"></div>
+
+                <div class="offcanvas-body mx-auto text-center">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 gap-4">
+                        <li class="nav-item navHover">
+                            <a class="nav-link active" aria-current="page" href="#">صفحه اصلی</a>
+                        </li>
+                        <li class="nav-item navHover">
+                            <a class="nav-link" href="#">دسته بندی محصولات</a>
+                        </li>
+                        <li class="nav-item navHover">
+                            <a class="nav-link" href="#">پیشنهادات ویژه</a>
+                        </li>
+                        <li class="nav-item navHover">
+                            <a class="nav-link" href="#">درباره ما</a>
+                        </li>
+                        <li class="nav-item navHover">
+                            <a class="nav-link" href="#">تماس با ما</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex search-wrapper ps-3 justify-content-center" role="search">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="نام کالا را وارد کنید" />
+                            <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+                        </div>
+                        <span class="close" onclick="searchToggle(this, event);"></span>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- home page -->
+    <section>
+        <div class="outer">
+            <div class="inner">
+                <div class="bg home">
+
+                    <div class="bg-overlay"></div>
+                    <div class="container z-index">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12">
+                                <div class="text-white text-center font_text">
+                                    <h3>خوش آمدید به</h3>
+                                    <h1 class="header_title mb-0 mt-3">فروشگاه <span class="element"
+                                            data-elements="لوازم خانگی کبیری., لوازم آشپزخانه کبیری."></span>
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <img class="mouse-move" src="./picture/mouse.png" alt="" />
+    </section>
+
+    <!-- chaire page -->
+    <section>
+        <div class="outer">
+            <div class="inner">
+                <div class="bg">
+
+                    <div class="section-fluid-main">
+                        <div class="section">
+
+                            <div class="info-wrap mob-margin txt-chair-1">
+                                <p class="title-up">صندلی مدل آرین</p>
+                                <div class="section-fluid">
+                                    <input class="desc-btn" type="radio" id="desc-1" name="desc-btn" checked />
+                                    <label for="desc-1">توضیحات</label>
+                                    <input class="desc-btn" type="radio" id="desc-2" name="desc-btn" />
+                                    <label for="desc-2">مشخصات</label>
+                                    <input class="desc-btn" type="radio" id="desc-3" name="desc-btn" />
+                                    <label for="desc-3">قیمت</label>
+                                    <div class="section-fluid desc-sec accor-1">
+                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از
+                                            طراحان گرافیک است .</p>
+                                    </div>
+                                    <div class="section-fluid desc-sec accor-2">
+                                        <div class="section-inline">
+                                            <p><span>76</span>cm<br>طول</p>
+                                        </div>
+                                        <div class="section-inline">
+                                            <p><span>68</span>cm<br>عرض</p>
+                                        </div>
+                                        <div class="section-inline">
+                                            <p><span>87</span>cm<br>ارتفاع</p>
+                                        </div>
+                                        <div class="section-inline">
+                                            <p><span>10</span>kg<br>وزن</p>
+                                        </div>
+                                    </div>
+                                    <div class="section-fluid desc-sec accor-3">
+                                        <h4>تومان 499,000 <span>500,000</span></h4>
+                                    </div>
+                                </div>
+                                <h5>انتخاب رنگ :</h5>
+                            </div>
+
+                            <div class="clearfix"></div>
+                            <input class="color-btn for-color-1" type="radio" id="color-1" name="color-btn" checked />
+                            <label class="first-color" for="color-1"></label>
+                            <input class="color-btn for-color-2" type="radio" id="color-2" name="color-btn" />
+                            <label class="color-2" for="color-2"></label>
+                            <input class="color-btn for-color-3" type="radio" id="color-3" name="color-btn" />
+                            <label class="color-3" for="color-3"></label>
+                            <input class="color-btn for-color-4" type="radio" id="color-4" name="color-btn" />
+                            <label class="color-4" for="color-4"></label>
+                            <input class="color-btn for-color-5" type="radio" id="color-5" name="color-btn" />
+                            <label class="color-5" for="color-5"></label>
+                            <input class="color-btn for-color-6" type="radio" id="color-6" name="color-btn" />
+                            <label class="color-6" for="color-6"></label>
+                            <div class="clearfix"></div>
+
+                            <div class="img-wrap chair-1"></div>
+                            <div class="img-wrap chair-2"></div>
+                            <div class="img-wrap chair-3"></div>
+                            <div class="img-wrap chair-4"></div>
+                            <div class="img-wrap chair-5"></div>
+                            <div class="img-wrap chair-6"></div>
+                            <div class="back-color"></div>
+                            <div class="back-color chair-2"></div>
+                            <div class="back-color chair-3"></div>
+                            <div class="back-color chair-4"></div>
+                            <div class="back-color chair-5"></div>
+                            <div class="back-color chair-6"></div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- <section>
+        <div class="outer">
+            <div class="inner">
+                <div class="bg myhome Offers">
+                    <div class="scroll">
+                        <p>
+                            <a href="">hello</a>
+                            <a href="">world</a>
+                        </p>
+                        <p>A Nostalgic Journey</p>
+                    </div>
+
+                    <img src="./picture/1.png" alt="" />
+                    <div class="home-content">
+                        <h1>
+                            RETROBEATS
+                            <ion-icon class="music-note-icon" name="musical-note-outline"></ion-icon>
+                        </h1>
+                        <p>
+                            Welcome to RetroBeats, the ultimate destination for all things
+                            80's music! We've
+                            carefully collected the top unforgettable hits from this golden
+                            era for a nostalgic journey. Join us to relive the magic of the
+                            80's!
+                        </p>
+                        <ul class="links">
+                            <li>
+                                <a href="#"><ion-icon class="icon" name="logo-apple"></ion-icon></a>
+                            </li>
+                            <li>
+                                <a href="#"><ion-icon class="icon" name="logo-google"></ion-icon></a>
+                            </li>
+                            <li>
+                                <a href="#"><ion-icon class="icon" name="logo-youtube"></ion-icon></a>
+                            </li>
+                            <li>
+                                <a href="#"><ion-icon class="icon" name="logo-instagram"></ion-icon></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img class="mouse-move" src="./picture/mouse.png" alt="" />
+    </section> -->
+
+    <!-- scroll page -->
+    <section>
+        <div class="outer">
+            <div class="inner">
+                <div class="bg content">
+
+                    <div class="bg-overlay"></div>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./picture/product/fenjan.webp" alt="modern talking" />
+                                <div class="title">
+                                    <h2>فنجان و استکان</h2>
+                                    <a class="aHover" href="">مشاهده</a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="./picture/product/ghandan.jpg" alt="berlin" />
+                                <div class="title">
+                                    <h2>شکلات خوری و قندان</h2>
+                                    <a class="aHover" href="">مشاهده</a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="./picture/product/shirini.jpg" alt="whitney houston" />
+                                <div class="title">
+                                    <h2>شیرینی خوری و کیک خوری</h2>
+                                    <a class="aHover" href="">مشاهده</a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="./picture/product/ghashogh.jpeg" alt="george michael" />
+                                <div class="title">
+                                    <h2>قاشق ، چنگال و چاقو</h2>
+                                    <a class="aHover" href="">مشاهده</a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="./picture/product/ajil.jpg" alt="whitney houston" />
+                                <div class="title">
+                                    <h2>میوه خوری و آجیل خوری</h2>
+                                    <a class="aHover" href="">مشاهده</a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="./picture/product/kase.webp" alt="a-ha" />
+                                <div class="title">
+                                    <h2>کاسه و پیاله پذیرایی</h2>
+                                    <a class="aHover" href="">مشاهده</a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="./picture/product/servis-ghablame.jpg" alt="berlin" />
+                                <div class="title">
+                                    <h2>سرویس قابلمه</h2>
+                                    <a class="aHover" href="">مشاهده</a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <img src="./picture/product/boshghab.jpg" alt="rick astley" />
+                                <div class="title">
+                                    <h2>بشقاب و سایر ظروف</h2>
+                                    <a class="aHover" href="">مشاهده</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./picture/product/parch.jpg" alt="rick astley" />
+                                <div class="title">
+                                    <h2>پارچ و لیوان</h2>
+                                    <a class="aHover" href="">مشاهده</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <i class="bi bi-hand-index-thumb handle-move"></i>
+    </section>
+
+    <!-- footer -->
+    <section>
+        <div class="outer">
+            <div class="inner">
+                <div class="bg foot">
+
+                    <div class="bg-overlay"></div>
+
+                    <div class="container z-index">
+                        <div class="row">
+
+                            <div class="col col-12 col-lg-6 px-5 mb-3 mt-5 mt-lg-0">
+
+                                <h4 class="mb-3">فروشگاه لوازم آشپزخانه کبیری</h4>
+
+                                <hr class="featurette-divider">
+
+                                <div class="row">
+
+                                    <div class="col col-12  d-flex gap-2">
+                                        <i class="bi bi-geo-alt-fill me-2"></i>
+                                        <h6>
+                                            آدرس :
+                                        </h6>
+                                    </div>
+                                    <div class="col col-12 d-flex pb-4 ps-5">
+                                        اصفهان ، قهدریجان ، خیابان امام خمینی (ره) ، کوچه بازار ، فروشگاه لوازم
+                                        آشپزخانه کبیری
+                                    </div>
+                                    <div class="col col-12 d-flex gap-2">
+                                        <i class="bi bi-clock-fill me-2"></i>
+                                        <h6>
+                                            ساعات کاری :
+                                        </h6>
+                                    </div>
+                                    <div class="col col-12 d-flex pb-4 ps-5">
+                                        شنبه تا پنجشنبه صبح (8 الی 13) و بعد از ظهر (17 الی 21)
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col col-12 col-lg-6 px-5">
+                                <h4 class="mb-3">ارتباط با ما</h4>
+
+                                <hr class="featurette-divider">
+
+                                <div class="row">
+                                    <div class="col col-6 col-sm-6 d-flex pb-sm-3 gap-2">
+                                        <i class="bi bi-envelope-at-fill me-2"></i>
+                                        <h6>
+                                            آیدی ایتا :
+                                        </h6>
+                                    </div>
+                                    <div class="col col-6 col-sm-6 d-flex pb-4 gap-3" dir="ltr">
+                                        <p>@</p>
+                                    </div>
+                                    <div class="col col-6 col-sm-6 d-flex pb-sm-3 gap-2 contact-me">
+                                        <i class="bi bi-telegram me-2"></i>
+                                        <h6>
+                                            آیدی تلگرام :
+                                        </h6>
+                                    </div>
+                                    <div class="col col-6 col-sm-6 d-flex pb-4 gap-3" dir="ltr">
+                                        <p>@</p>
+                                    </div>
+                                    <div class="col col-6 col-sm-6 d-flex pb-sm-3 gap-2">
+                                        <i class="bi bi-telephone-fill me-2"></i>
+                                        <h6>
+                                            شماره تماس :
+                                        </h6>
+                                    </div>
+                                    <div class="col col-6 col-sm-6 d-flex pb-4 gap-3" dir="ltr">
+                                        <p>0313750....</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col col-12">
+                                <div class="row">
+                                    <div class="col col-12 col-md-9 col-lg-7 col-xl-6 col-xxl-5 mx-auto">
+                                        <hr class="featurette-divider mb-3 mt-3">
+                                    </div>
+                                    <div style="text-align: center;">
+                                        <p style="font-size: 14px;">
+                                            کلیه حقوق مادی و معنوی سایت متعلق به <span style="font-size: 16px;">فروشگاه
+                                                کبیری</span>
+                                            می
+                                            باشد. &copy; <span id="date"></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Observer.min.js"></script>
+
+    <!-- jquery -->
+    <script src="./script/jquery.min.js"></script>
+
+
+
+    <!-- partial -->
+    <script src="./script/responsive-landing-page-script.js"></script>
+
+
+    <script src="./script/typed.js"></script>
+
+
+    <script src="./script/scriptSearch.js"></script>
+
+
+
+    <script>
+        $(".element").each(function () {
+            var $this = $(this);
+            $this.typed({
+                strings: $this.attr('data-elements').split(','),
+                typeSpeed: 100,
+                backDelay: 3000
+            });
+        });
+    </script>
+
+</body>
+
+</html>
