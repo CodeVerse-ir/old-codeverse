@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="fa" dir="rtl" class="h-100">
+
+<head>
+  <script src="../assets/js/color-modes.js"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.118.2">
+  <title>Contact with me</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/telephone.svg" />
+
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
+
+  <!-- bootstrap icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <!-- css style -->
+  <link href="../css/cover.css" rel="stylesheet">
+
+</head>
+
+<body class="d-flex h-100 text-center text-bg-dark">
+
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+      <div>
+        <nav class="nav nav-masthead justify-content-center gap-2">
+          <img src="../icons/codeVerse.png" alt="" style="width: 40px;height: 40px;">
+          <h3 class="float-md-start mb-0">Code Verse</h3>
+        </nav>
+      </div>
+    </header>
+
+    <main class="px-3">
+      <h1 class="mb-5" style="color: var(--text-light);">ارتباط با من</h1>
+      <div class="body-text d-flex justify-content-center">
+        <!-- <ul class="pe-3 pe-sm-5">
+          <li class="pb-3 d-flex">
+            <i class="bi bi-envelope-at-fill me-2"></i>
+            جیمیل :
+          </li>
+          <li class="pb-3 d-flex">
+            <i class="bi bi-telegram me-2"></i>
+            آیدی تلگرام :
+          </li>
+          <li class="d-flex">
+            <i class="bi bi-telephone-fill me-2"></i>
+            شماره تماس :
+          </li>
+        </ul>
+        <ul dir="ltr">
+          <li class="d-flex gap-3 pb-3">
+            <button class="btnCopy" onclick="copyText1()">
+              <i class="bi bi-clipboard biCopy"></i>
+            </button>
+
+            <a class="aHover" href="mailto:codeversesite@gmail.com">codeversesite@gmail.com</a>
+
+          </li>
+          <li class="d-flex gap-3 pb-3">
+            <button class="btnCopy" onclick="copyText2()">
+              <i class="bi bi-clipboard biCopy"></i>
+            </button>
+
+            <a class="aHover" href="tg://resolve?domain=Mohammad_mk_1380">@Mohammad_mk_1380</a>
+          </li>
+          <li class="d-flex gap-3">
+            <button class="btnCopy" onclick="copyText3()">
+              <i class="bi bi-clipboard biCopy"></i>
+            </button>
+            <a class="aHover" href="tel:09162917063">09162917063</a>
+          </li>
+        </ul> -->
+
+
+        <div class="row" style="width: 410px;">
+          <div class="col col-6 col-sm-6 d-flex pb-sm-3 gap-2 contact-me">
+            <i class="bi bi-envelope-at-fill me-2"></i>
+            <h6>
+              جیمیل :
+            </h6>
+          </div>
+          <div class="col col-6 col-sm-6 d-flex pb-4 gap-3 contact-me" dir="ltr">
+            <button class="btnCopy" onclick="copyText1()">
+              <i class="bi bi-clipboard biCopy"></i>
+            </button>
+
+            <a class="aHover" href="mailto:codeversesite@gmail.com">codeversesite@gmail.com</a>
+          </div>
+          <div class="col col-6 col-sm-6 d-flex pb-sm-3 gap-2 contact-me">
+            <i class="bi bi-telegram me-2"></i>
+            <h6>
+              آیدی تلگرام :
+            </h6>
+          </div>
+          <div class="col col-6 col-sm-6 d-flex pb-4 gap-3 contact-me" dir="ltr">
+            <button class="btnCopy" onclick="copyText2()">
+              <i class="bi bi-clipboard biCopy"></i>
+            </button>
+
+            <a class="aHover" href="tg://resolve?domain=Mohammad_mk_1380">@Mohammad_mk_1380</a>
+          </div>
+          <div class="col col-6 col-sm-6 d-flex pb-sm-3 gap-2 contact-me">
+            <i class="bi bi-telephone-fill me-2"></i>
+            <h6>
+              شماره تماس :
+            </h6>
+          </div>
+          <div class="col col-6 col-sm-6 d-flex pb-4 gap-3 contact-me" dir="ltr">
+            <button class="btnCopy" onclick="copyText3()">
+              <i class="bi bi-clipboard biCopy"></i>
+            </button>
+
+            <a class="aHover" href="tel:09162917063">09162917063</a>
+          </div>
+        </div>
+
+        <!-- toast 1 -->
+        <div class="toast-container toast-1">
+          <div id="liveToast1" class="toast w-100" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-body">
+              کپی شد!
+            </div>
+          </div>
+        </div>
+
+        <!-- toast 2 -->
+        <div class="toast-container toast-2">
+          <div id="liveToast2" class="toast w-100" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-body">
+              کپی شد!
+            </div>
+          </div>
+        </div>
+
+        <!-- toast 3 -->
+        <div class="toast-container toast-3">
+          <div id="liveToast3" class="toast w-100" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-body">
+              کپی شد!
+            </div>
+          </div>
+        </div>
+      </div>
+      </p>
+      <div>
+        <a class="btn-style" href="../index.html">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          برگشت
+        </a>
+      </div>
+    </main>
+
+
+    <footer class="mt-auto text-white-50">
+      <p style="font-size: 14px; color: var(--text-grey);">
+        کلیه حقوق مادی و معنوی وبسایت متعلق به <span style="font-size: 16px;">Code Verse</span>
+        می
+        باشد. &copy; <span id="date"></span>
+      </p>
+    </footer>
+  </div>
+
+
+
+  <!-- bootstrap bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+
+
+
+  <script src="../js/cover.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,316 @@
+/*
+=============== 
+font
+===============
+*/
+
+
+@font-face {
+  font-family: "vazir";
+  src: url("../fonts/vazir/Vazir-Medium-FD-WOL.woff") format("woff2"),
+    url("../fonts/vazir/Vazir-Medium-FD-WOL.woff") format("woff"),
+    url("../fonts/vazir/Vazir-Medium-FD-WOL.ttf") format("truetype");
+}
+
+
+/*
+Globals
+ */
+
+:root {
+  --ff-primary: "vazir", sans-serif;
+  --text-dark: #1F252E;
+  --text-light: #fff;
+  --text-orange: #f9532d;
+  --text-cyan: #244D61;
+  --text-grey: #9DB2BF;
+  --text-ocre: #FFBB5C;
+  --transition: all 0.3s linear;
+}
+
+/* Custom default button */
+.btn-light,
+.btn-light:hover,
+.btn-light:focus {
+  color: #333;
+  text-shadow: none;
+  /* Prevent inheritance from `body` */
+}
+
+
+/*
+ * Base structure
+ */
+
+body {
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  font-family: var(--ff-primary);
+}
+
+ul {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+a{
+  color: var(--text-ocre);
+  text-decoration: none;
+}
+
+/*
+=============== 
+main
+===============
+*/
+
+/*** button copy ***/
+
+main .btnCopy {
+  border: none;
+  background: none;
+  transition: var(--transition);
+}
+
+main .btnCopy.press {
+  -webkit-animation: jello-horizontal 0.66s both;
+  animation: jello-horizontal 0.66s both;
+}
+
+main .btnCopy i:hover {
+  color: var(--text-orange);
+}
+
+main .bi-check-lg {
+  color: var(--text-orange) !important;
+}
+
+main i,
+main h6 {
+  color: var(--text-light);
+}
+
+.aHover{
+  position: relative;
+  text-decoration: none;
+  color: var(--text-ocre);
+  transition: var(--transition);
+}
+
+/*** a hover ***/
+
+.aHover:hover {
+  color: var(--text-orange);
+}
+
+.aHover::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--text-orange);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.aHover:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+main .biCopy {
+  color: var(--text-grey);
+  transition: var(--transition);
+}
+
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/* button style*/
+
+.btn-style {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: var(--text-orange);
+  text-decoration: none;
+  font-size: 1rem;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.btn-style:hover {
+  color: var(--text-cyan);
+  background: var(--text-ocre);
+  border-radius: 1rem;
+  box-shadow: 0 0 10px var(--text-ocre), 0 0 40px var(--text-ocre), 0 0 80px var(--text-ocre);
+}
+
+.btn-style span {
+  position: absolute;
+  display: block;
+}
+
+.btn-style span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--text-ocre));
+  animation: slidein-left 2s forwards infinite 0s;
+}
+
+.btn-style span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, var(--text-ocre));
+  animation: slidein-top 2s forwards infinite 1s;
+}
+
+.btn-style span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, var(--text-ocre));
+  animation: slidein-right 2s forwards infinite 0s;
+}
+
+.btn-style span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, var(--text-ocre));
+  animation: slidein-bottom 2s forwards infinite 1s;
+}
+
+@keyframes slidein-left {
+  from {
+    left: -100%;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes slidein-top {
+  from {
+    top: -100%;
+  }
+
+  to {
+    top: 100%;
+  }
+}
+
+@keyframes slidein-right {
+  from {
+    right: -100%;
+  }
+
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes slidein-bottom {
+  from {
+    bottom: -100%;
+  }
+
+  to {
+    bottom: 100%;
+  }
+}
+
+
+.toast-1 {
+  color: var(--text-dark);
+  text-shadow: none;
+  margin-left: -280px;
+  margin-bottom: 30px;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+}
+
+.toast-2 {
+  color: var(--text-dark);
+  text-shadow: none;
+  margin-left: -280px;
+  margin-bottom: -20px;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+}
+
+.toast-3 {
+  color: var(--text-dark);
+  text-shadow: none;
+  margin-left: -280px;
+  margin-bottom: -70px;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+}
+
+@media screen and (max-width:576px) {
+  .toast-1 {
+    bottom: 10px;
+    left: 10px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .toast-2 {
+    bottom: 10px;
+    left: 10px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .toast-3 {
+    bottom: 10px;
+    left: 10px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
