@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="fa" dir="rtl" data-bs-theme="auto">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.118.2">
+
+    <!-- title and icon title -->
+    <title>سازمان حمل و نقل جمعی شهرستان فلاورجان</title>
+    <link rel="shortcut icon" href="../images/icons/icons8-public-transportation-50.png" type="image/x-icon">
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- bootstrap rtl link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
+
+    <!-- css style -->
+    <link rel="stylesheet" href="../css/navbars-offcanvas.css">
+    <link rel="stylesheet" href="../css/blog.rtl.css.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body class="pb-0">
+
+    <nav class="navbar shadow sticky-top navbar-expand-xl bg-body-tertiary" aria-label="Offcanvas navbar large">
+        <div class="container-fluid">
+            <button class="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+                <i class="bi bi-list-nested"></i>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar2"
+                aria-labelledby="offcanvasNavbar2Label">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close btn-close-dark ms-auto me-3" data-bs-dismiss="offcanvas"
+                        aria-label="Close">
+                        <i class="bi bi-x"></i>
+                    </button>
+                </div>
+                <div class="offcanvas-body mx-auto text-center">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 gap-4">
+                        <li class="nav-item">
+                            <a class="nav-link active aHover" aria-current="page" href="../index.html">صفحه اصلی</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link aHover" href="#">منشور سازمان</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle aHover" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                برنامه زمانبندی خطوط
+                            </a>
+                            <ul class="dropdown-menu shadow">
+                                <li class="d-flex justify-content-center align-items-center">
+                                    <i class="bi bi-calendar2-week-fill ms-2"></i>
+                                    <a class="dropdown-item aHover" href="#">فلاورجان-اصفهان</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="d-flex justify-content-center align-items-center">
+                                    <i class="bi bi-calendar2-week-fill ms-2"></i>
+                                    <a class="dropdown-item aHover" href="#">قهدریجان-اصفهان</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="d-flex justify-content-center align-items-center">
+                                    <i class="bi bi-calendar2-week-fill ms-2"></i>
+                                    <a class="dropdown-item aHover" href="#">پیربکران-اصفهان</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="d-flex justify-content-center align-items-center">
+                                    <i class="bi bi-calendar2-week-fill ms-2"></i>
+                                    <a class="dropdown-item aHover" href="#">ابریشم-اصفهان</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="d-flex justify-content-center align-items-center">
+                                    <i class="bi bi-calendar2-week-fill ms-2"></i>
+                                    <a class="dropdown-item aHover" href="#">ایمانشهر-اصفهان</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="d-flex justify-content-center align-items-center">
+                                    <i class="bi bi-calendar2-week-fill ms-2"></i>
+                                    <a class="dropdown-item aHover" href="#">زازران-خمینی شهر</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="d-flex justify-content-center align-items-center">
+                                    <i class="bi bi-calendar2-week-fill ms-2"></i>
+                                    <a class="dropdown-item aHover" href="#">بهاران-سه راه کلیشاد</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle aHover" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                مسیر خطوط
+                            </a>
+                            <ul class="dropdown-menu shadow">
+                                <li class="d-flex justify-content-center align-items-center">
+                                    <i class="bi bi-geo-alt-fill ms-2"></i>
+                                    <a class="dropdown-item aHover" href="#">فلاورجان-اصفهان</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="d-flex justify-content-center align-items-center">
+                                    <i class="bi bi-geo-alt-fill ms-2"></i>
+                                    <a class="dropdown-item aHover" href="#">قهدریجان-اصفهان</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="d-flex justify-content-center align-items-center">
+                                    <i class="bi bi-geo-alt-fill ms-2"></i>
+                                    <a class="dropdown-item aHover" href="#">پیربکران-اصفهان</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="d-flex justify-content-center align-items-center">
+                                    <i class="bi bi-geo-alt-fill ms-2"></i>
+                                    <a class="dropdown-item aHover" href="#">ابریشم-اصفهان</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="d-flex justify-content-center align-items-center">
+                                    <i class="bi bi-geo-alt-fill ms-2"></i>
+                                    <a class="dropdown-item aHover" href="#">ایمانشهر-اصفهان</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="d-flex justify-content-center align-items-center">
+                                    <i class="bi bi-geo-alt-fill ms-2"></i>
+                                    <a class="dropdown-item aHover" href="#">زازران-خمینی شهر</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link aHover" href="#">گالری تصاویر</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link aHover" href="#">روابط عمومی</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link aHover" href="#">ثبت نام</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link aHover" href="#">درباره ما</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link aHover" href="#">تماس با ما</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container-fluid">
+        <div class="row px-3 px-md-5 px-xl-0 mb-5">
+
+            <div class="col-md-6 col-xl-3 order-1 order-xl-0">
+
+                <div class="position-sticky" style="top: 6rem;">
+
+                    <ul class="list-group rounded-4 shadow mb-5 mx-auto" style="width: 18rem;">
+                        <li class="list-group-item d-flex justify-content-start align-items-center ps-5 icon-animate">
+                            <img class="me-4" src="../images/icons/icons8-organization-50.png" alt="">
+                            <a class="aHover" href="">
+                                معرفی سازمان
+                            </a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-start align-items-center ps-5 icon-animate">
+                            <img class="me-4" src="../images/icons/icons8-city-buildings-50.png" alt="">
+                            <a class="aHover" href="">
+                                معرفی شهرستان
+                            </a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-start align-items-center ps-5 icon-animate">
+                            <img class="me-4" src="../images/icons/icons8-public-transportation-50.png" alt="">
+                            <a class="aHover" href="">
+                                فعالیت های سازمان
+                            </a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-start align-items-center ps-5 icon-animate">
+                            <img class="me-4" src="../images/icons/icons8-terms-and-conditions-50.png" alt="">
+                            <a class="aHover" href="">
+                                مناقصات و مزایدات
+                            </a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-start  align-items-center ps-5 icon-animate">
+                            <img class="me-4" src="../images/icons/icons8-solve-50.png" alt="">
+                            <a class="aHover" href="">
+                                پرسش و پاسخ
+                            </a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-start align-items-center ps-5 icon-animate">
+                            <img class="me-4" src="../images/icons/icons8-school-50.png" alt="">
+                            <a class="aHover" href="">
+                                آموزش شهروندی
+                            </a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-start align-items-center ps-5 icon-animate">
+                            <img class="me-4" src="../images/icons/icons8-collaboration-female-male-50.png" alt="">
+                            <a class="aHover" href="">
+                                انتقادات و پیشنهادات
+                            </a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-start align-items-center ps-5 icon-animate">
+                            <img class="me-4" src="../images/icons/icons8-pick-up-50.png" alt="">
+                            <a class="aHover" href="">
+                                اشیاء گمشده
+                            </a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-start align-items-center ps-5 icon-animate">
+                            <img class="me-4" src="../images/icons/icons8-bus-50.png" alt="">
+                            <a class="aHover" href="">
+                                بیمه رانندگان اتوبوس
+                            </a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-start align-items-center ps-5 icon-animate">
+                            <img class="me-4" src="../images/icons/icons8-taxi-50.png" alt="">
+                            <a class="aHover" href="">
+                                بیمه رانندگان تاکسی
+                            </a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-start align-items-center ps-5 icon-animate">
+                            <img class="me-4" src="../images/icons/icons8-semi-truck-50.png" alt="">
+                            <a class="aHover" href="">
+                                بیمه رانندگان وانت بار
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="card-pro card-pro-0 mx-auto mb-5">
+                        <div class="border-pro">
+                            <h4>
+                                مدیر عامل
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="card-pro card-pro-1 mx-auto mb-5">
+                        <div class="border-pro">
+                            <h4>
+                                <a href="">
+                                    فواید استفاده از وسایل حمل و نقل عمومی
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="card-pro card-pro-2 mx-auto mb-5">
+                        <div class="border-pro">
+                            <h4>
+                                <a href="">
+                                    حجاب تکریم است
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="card-pro card-pro-3 mx-auto mb-5">
+                        <div class="border-pro">
+                            <h4>
+                                <a href="">
+                                    13 راه ساده برای صرفه جویی آب در خانه
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="card-pro card-pro-4 mx-auto mb-5">
+                        <div class="border-pro">
+                            <h4>
+                                <a href="">
+                                    روش های صرفه جویی در مصرف گاز
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="col-xl-6 order-0 order-xl-1">
+
+                <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner rounded-3">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <img src="../images/carousel/1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../images/carousel/2.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>
+                                    حضور مدیر عامل سازمان در مجمع عمومی اتحادیه
+                                    حمل و نقل کشور
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../images/carousel/3.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>
+                                    حضور پر شور مدیرعامل،پرسنل و رانندگان سازمان در مراسم راهپیمایی 22 بهمن
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../images/carousel/4.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <img src="../images/carousel/5.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>
+                                    حضور پرشور مدیر عامل ، پرسنل و رانندگان سازمان در راهپیمایی روز جهانی قدس
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <div class="row my-4">
+
+                    <div class="col-12 cards-text">
+                        <div
+                            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                            <div class="col p-4 d-flex flex-column position-static">
+                                <div class="col-auto mx-auto mb-5 mt-4">
+                                    <img src="../images/card-text/3.jpg" alt="" style="width: 250px;">
+                                </div>
+                                <h4 class="mb-0">
+                                    گزارش تصویری نصب بنرهای عفاف و حجاب در اتوبوس های سازمان
+                                </h4>
+                                <hr>
+                                <p class="card-text mb-3" style="text-align: justify;">
+                                    گزارش تصویری نصب پوسترهای عفاف و حجاب در اتوبوس های سازمان حمل و نقل جمعی شهرداریهای
+                                    شهرستان فلاورجان با همکاری شهرداری ابریشم
+                                </p>
+                                <img class="my-4" src="../images/text/9.jpg" alt="">
+                                <img class="my-4" src="../images/text/10.jpg" alt="">
+                                <img class="my-4" src="../images/text/11.jpg" alt="">
+                                <img class="my-4" src="../images/text/12.jpg" alt="">
+                                <p class="text-body-secondary" style="text-align: center;">
+                                    1402/06/18
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-xl-3 order-2 mt-5 mt-md-0">
+                <div class="position-sticky" style="top: 6rem;">
+
+                    <ul class="list-group rounded-4 shadow mb-5 mx-auto" style="width: 18rem;text-align: center;">
+                        <li class="list-group-item d-flex justify-content-center align-items-center"
+                            style="background-color: var(--text-ocre);">
+                            پیوند ها
+                        </li>
+                        <li class="list-group-item d-flex justify-content-center align-items-center">
+                            <a class="aHover" href="">
+                                دفتر مقام معظم رهبری
+                            </a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-center align-items-center">
+                            <a class="aHover" href="">
+                                ریاست جمهوری
+                            </a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-center align-items-center">
+                            <a class="aHover" href="">
+                                پایگاه اطلاع رسانی دولت
+                            </a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-center align-items-center">
+                            <a class="aHover" href="">
+                                مجلس شورای اسلامی
+                            </a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-center align-items-center">
+                            <a class="aHover" href="">
+                                وزارت کشور
+                            </a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-center align-items-center">
+                            <a class="aHover" href="">
+                                اتحادیه اتوبوسرانی های شهری کل کشور
+                            </a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-center align-items-center">
+                            <a class="aHover" href="">
+                                سازمان شهرداری ها و دهیاری های کشور
+                            </a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-center align-items-center">
+                            <a class="aHover" href="">
+                                اتحادیه سازمان های حمل و نقل همگانی کشور
+                            </a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-center align-items-center">
+                            <a class="aHover" href="">
+                                سامانه مدیریت تقاضا و مصرف سوخت
+                            </a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-center align-items-center">
+                            <a class="aHover" href="">
+                                اتحادیه تاکسیرانی های شهری کشور
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="card-pro card-pro-5 mx-auto mb-5">
+                        <div class="border-pro">
+                            <h4>
+                                شعار سال
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="card-pro card-pro-6 mx-auto mb-5">
+                        <div class="border-pro">
+                            <h4>
+                                <a href="">
+                                    بیانیه گام دوم انقلاب
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="card-pro card-pro-7 mx-auto mb-5">
+                        <div class="border-pro">
+                            <h4>
+                                <a href="">
+                                    انتقادات و پیشنهادات
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="card-pro card-pro-8 mx-auto mb-5">
+                        <div class="border-pro">
+                            <h4>
+                                <a href="">
+                                    احادیث امام حسین (ع)
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="box-card mx-auto">
+                        <div class="form-card">
+                            <h2>ورود به سایت</h2>
+                            <div class="inputBox-card">
+                                <input type="text" required="required" maxlength="15" />
+                                <span>نام کاربری</span>
+                                <i></i>
+                            </div>
+                            <div class="inputBox-card">
+                                <input type="password" required="required" maxlength="15" />
+                                <span>رمز عبور</span>
+                                <i></i>
+                            </div>
+                            <div class="links mt-3">
+                                <a class="aHover pb-1" href="#">ثبت نام</a>
+                                <a class="aHover pb-1" href="#">فراموشی رمز عبور</a>
+                            </div>
+                            <input class="mx-auto shadow" type="submit" value="ورود" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="container-fluid py-5 shadow">
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 col-lg-6 px-0 mb-4">
+                <h5 class="ps-5 mb-3">
+                    سازمان حمل و نقل جمعی شهرستان فلاورجان
+                </h5>
+                <p class="px-5" style="text-align: justify;">
+                    سازمان حمل و نقل جمعی شهرستان فلاورجان یکی از سازمان‌های کلان حمل و نقل در استان اصفهان است. این
+                    سازمان
+                    مسئولیت ارائه خدمات حمل و نقل عمومی، ایجاد خطوط اتوبوسرانی شهری و روستایی، تأسیس و اداره ترمینال‌ها
+                    و
+                    ایستگاه‌های
+                    اتوبوس، تنظیم سرویس‌های حمل و نقل عمومی و نظارت بر کیفیت و ایمنی خدمات حمل و نقل را بر عهده دارد.
+                </p>
+            </div>
+            <div class="col-12 col-lg-5 d-flex justify-content-center">
+                <ul class="text-start">
+                    <li class="d-flex">
+                        <i class="bi bi-telephone-fill me-3"></i>
+                        <p>
+                            تلفن تماس :
+                        </p>
+                    </li>
+                    <li class="d-flex">
+                        <i class="bi bi-envelope-fill me-3"></i>
+                        <p>
+                            سامانه پیامکی :
+                        </p>
+                    </li>
+                    <li class="d-flex">
+                        <i class="bi bi-chat-left-fill me-3"></i>
+                        <p>
+                            پیام رسان سروش :
+                        </p>
+                    </li>
+                    <li class="d-flex">
+                        <i class="bi bi-chat-fill me-3"></i>
+                        <p>
+                            پیام رسان گپ :
+                        </p>
+                    </li>
+                </ul>
+
+                <ul class="text-end ps-sm-4">
+                    <li>
+                        <p>
+                            031-37423147
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            30006859000708
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            https://sapp.ir/pto.falavarjan
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            https://gap.im/pto_falavarjan
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 text-center">
+                <hr class="w-50 mx-auto">
+                <p class="px-3">
+                    کلیه حقوق این سایت متعلق به سازمان حمل و نقل جمعی شهرداریهای شهرستان فلاورجان می باشد.
+                    &copy;
+                </p>
+                <span id="data"></span>
+            </div>
+        </div>
+
+    </footer>
+
+    <form class="formDarkMode">
+        <input id="darkModeToggle" class="btnDarkMode" type="checkbox" name="Dark mode" role="switch" value="on">
+        <label for="darkModeToggle" class="sr">Dark Mode</label>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
